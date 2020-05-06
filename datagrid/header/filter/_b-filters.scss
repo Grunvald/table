@@ -1,0 +1,55 @@
+.filters {
+  .el-dialog__header {
+    border-bottom: 1px solid $--color-gray-04;
+  }
+
+  .el-dialog__body {
+  }
+
+  .el-dialog__footer {
+    border-top: 1px solid $--color-gray-04;
+  }
+
+  &__footer {
+    display: flex;
+    width: 100%;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: minmax(200px, 450px) auto 150px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+
+    &-icon {
+      color: $--color-gray-02;
+    }
+
+    .el-checkbox {
+      display: flex;
+      align-items: center;
+      color: $--color-gray-01;
+      .el-checkbox__label{
+        width: 400px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+
+    & :nth-child(n4 + 1) {
+      grid-column: 1 / 1;
+    }
+
+    & :nth-child(n4 + 2) {
+      grid-column: 2 / 2;
+    }
+
+    & :nth-child(n4 + 3) {
+      grid-column: 3 / 3;
+    }
+
+    & :nth-child(n4 + 4) {
+      grid-column: 4 / 4;
+    }
+  }
+}
