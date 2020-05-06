@@ -1,2 +1,2 @@
 # table
-table component
+table component extension for element ui table 
